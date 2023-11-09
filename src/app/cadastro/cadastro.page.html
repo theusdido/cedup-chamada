@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cadastro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input
+        id="nome"
+        name="nome"
+        [(ngModel)]="nome"
+      ></ion-input>  
+      </ion-item>
+      <ion-item>
+        <ion-label>Matrícula</ion-label>
+        <ion-input
+          id="matricula"
+          name="matricula"
+          [(ngModel)]="matricula"
+        ></ion-input>  
+      </ion-item>      
+      <ion-item>
+        <ion-label>CPF</ion-label>
+        <ion-input
+          id="cpf"
+          name="cpf"
+          [(ngModel)]="cpf"
+        ></ion-input>  
+      </ion-item>       
+  </ion-list>
+  <ion-button (click)="salvar()">Salvar</ion-button>
+
+</ion-content>
